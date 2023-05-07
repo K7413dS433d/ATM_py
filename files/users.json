@@ -1,0 +1,25 @@
+{
+  "admins": [
+    {
+      "id": "YWRtaW4=",
+      "password": "YWRtaW4="
+    }
+  ],
+  "users": [
+    {
+      "id": "a2hhbGVk",
+      "password": "a2hhbGVk",
+      "dp_name": "a2hhbGVk.json"
+    },
+    {
+      "id": "emVpYWQ=",
+      "password": "emVpYWQ=",
+      "dp_name": "emVpYWQ=.json"
+    },
+    {
+      "id": "ZXNsYW0=",
+      "password": "ZXNsYW0=",
+      "dp_name": "ZXNsYW0=.json"
+    }
+  ]
+}
