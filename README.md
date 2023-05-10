@@ -1,6 +1,6 @@
 # ATM Machine
 
-projct with simpel database using json and text files for ATM mathcine with admin and users account
+python project with simpel database using json and text files for ATM mathcine with admin and users account
 
 admin authorization
 ```
