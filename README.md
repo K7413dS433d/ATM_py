@@ -91,10 +91,3 @@ The `log.txt` file records transaction logs and user actions for auditing purpos
 
 Contributions to this project are welcome! If you find a bug or have an enhancement in mind, please open an issue or submit a pull request.
 
-## License
-
-This project is open-source and available under the [MIT License](LICENSE).
-
-
-
-
