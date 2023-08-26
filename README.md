@@ -37,21 +37,23 @@ Please note that these credentials are meant for testing and demonstration only.
 
 The project directory structure is organized as follows:
 
+```
 ATM
 ├── Includes
-│ ├── ATM.py
-│ ├── Authentication.py
-│ ├── admin_functions.py
-│ └── encryption.py
+│   ├── ATM.py
+│   ├── Authentication.py
+│   ├── admin_functions.py
+│   └── encryption.py
 ├── README.md
 ├── files
-│ ├── databases
-│ │ ├── ZXNsYW0=.json
-│ │ ├── a2hhbGVk.json
-│ │ └── emVpYWQ=.json
-│ ├── log.txt
-│ └── users.json
+│   ├── databases
+│   │   ├── ZXNsYW0=.json
+│   │   ├── a2hhbGVk.json
+│   │   └── emVpYWQ=.json
+│   ├── log.txt
+│   └── users.json
 └── main.py
+```
 
 
 ## Includes Directory
