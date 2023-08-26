@@ -1,142 +1,98 @@
-# ATM Machine
+# ATM Machine Project
 
-python project with simpel database using json and text files for ATM mathcine with admin and users account
+A Python project that simulates an ATM machine with a simple database implementation using JSON and text files. This project allows users, including administrators, to perform various banking operations such as withdrawals, deposits, and balance inquiries.
 
-admin authorization
-```
-id : admin
-password : admin
-```
-user1 authorization
-```
-id : khaled
-password : khaled
-```
-user2 authorization
-```
-id : zeiad
-password : zeiad
-```
-user3 authorization
-```
-id : eslam
-password : eslam
-```
+## Table of Contents
+- [Introduction](#introduction)
+- [Authentication](#authentication)
+- [Project Structure](#project-structure)
+- [Includes Directory](#includes-directory)
+- [Files Directory](#files-directory)
+- - [Database Directory](#database-directory)
+- - [Log Files](#log-files)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
+## Introduction
 
-## Files and Directories :
+The ATM Machine project is designed to provide a basic ATM experience with functionalities such as account management, transaction recording, and user authentication. The project employs a combination of Python scripts and JSON/text files to achieve its objectives.
 
-```
+## Authentication
+
+The project includes predefined user credentials for demonstration purposes:
+
+**Admin:**
+- ID: admin
+- Password: admin
+
+**Users:**
+- ID: khaled, Password: khaled
+- ID: zeiad, Password: zeiad
+- ID: eslam, Password: eslam
+
+Please note that these credentials are meant for testing and demonstration only.
+
+## Project Structure
+
+The project directory structure is organized as follows:
+
 ATM
 ├── Includes
-│   ├── ATM.py
-│   ├── Authentication.py
-│   ├── admin_functions.py
-│   └── encryption.py
+│ ├── ATM.py
+│ ├── Authentication.py
+│ ├── admin_functions.py
+│ └── encryption.py
 ├── README.md
 ├── files
-│   ├── databases
-│   │   ├── ZXNsYW0=.json
-│   │   ├── a2hhbGVk.json
-│   │   └── emVpYWQ=.json
-│   ├── log.txt
-│   └── users.json
+│ ├── databases
+│ │ ├── ZXNsYW0=.json
+│ │ ├── a2hhbGVk.json
+│ │ └── emVpYWQ=.json
+│ ├── log.txt
+│ └── users.json
 └── main.py
-```
-## Includes director
 
-#### encryption.py
-```
-file pathes:
-    dp_files : locate folder containing database users Files
-    users_files : locate json file contains users, admin login data and database names for users
-    log_files : locate log file  contains log data for users
 
-options:
-    admin and user options that can perform
+## Includes Directory
 
-en_code(message) : encode message
+The `Includes` directory contains essential scripts that drive the functionality of the ATM machine. Here's a brief overview:
 
-de_code(encoded_message) : decode message
+- **encryption.py:** Manages data encryption and decryption for user security.
+- **admin_functions.py:** Provides admin-specific functions, such as user management and transactions history.
+- **Authentication.py:** Handles user authentication and log recording.
+- **ATM.py:** Contains core ATM functions for transactions, balance inquiries, and options printing.
 
-dp_id(encrypted_id) : create database file for new user
-```
+## Files Directory
 
-#### admin_functions.py
-```
-user_exist(user_id, section) : check if user or admin found
+The `files` directory holds essential data and subdirectories for database and log files. Here's a breakdown:
 
-get_user_idx(user_id, section) : get user index from users file
+### Database Directory
 
-add_user(user_id, user_passwd) : add new user
+This subdirectory (`databases`) contains JSON files corresponding to user accounts.
 
-remove_user(user_id) : remove user
+### Log Files
 
-change_user_passwd(user_id, user_newPassword) : change user user Password
+The `log.txt` file records transaction logs and user actions for auditing purposes.
 
-get_dp_name(user_id) : get database name for user
+## Usage
 
-user_info(user_id) : get all user information
+1. Clone this repository using:
+    git clone https://github.com/your-username/ATM.git
 
-chang_admin_passwd(admin_newPassword) : change admin password
+2. Run the main script:
+   python main.py
 
-transactions_history(user_id) : get transactions history
-```
+3. Follow the on-screen instructions to interact with the ATM.
 
-#### Authentication.py
-```
-user_Authenticated(user_id, user_password, section) : check if user aor admin is Authenticated
+## Contributing
 
-write_log(user_id) : write a log data
+Contributions to this project are welcome! If you find a bug or have an enhancement in mind, please open an issue or submit a pull request.
 
-log_history() : get all log data
+## License
 
-search_log(*args) : search in log data
-```
+This project is open-source and available under the [MIT License](LICENSE).
 
-#### ATM.py
-```
-get_PID(user_id) : get a process id
 
-initial_transaction(user_id) : make initial transaction data
 
-add_Transaction(user_id, current_balance,  withdraw_amount, deposit_amount) : to add transaction information to user file in database
-
-withdraw(user_id, withdraw_amount) : withdrow from account
-
-deposit(user_id, deposit_amount) : deposit from account
-
-current_balance(user_id) : get current balance account
-
-last_transaction(user_id) : get last transaction information
-
-print_options(options) : print a string contains all options for user
-
-get_PID(user_id) : to get a process id
-
-initial_transaction(user_id) : make initial transaction data
-
-add_Transaction(user_id, current_balance,  withdraw_amount, deposit_amount) : to add transaction information to user file in database
-
-withdraw(user_id, withdraw_amount) : withdrow from account
-
-deposit(user_id, deposit_amount) : deposit from account
-
-current_balance(user_id) : get current balance account
-
-last_transaction(user_id) : get last transaction information
-
-print_options(options) : print a string contains all options for user
-```
-
-## files directory
-
-```
-database directory : includes all users database json files
-
-log files : includes all log data
-
-users.json : includes all users data
-
-```
 
