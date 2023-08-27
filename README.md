@@ -12,7 +12,6 @@ A Python project that simulates an ATM machine with a simple database implementa
 - - [Log Files](#log-files)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
