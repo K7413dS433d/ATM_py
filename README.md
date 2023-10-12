@@ -74,7 +74,7 @@ This subdirectory (`databases`) contains JSON files corresponding to user accoun
 
 ### Log Files
 
-The `log.txt` file records transaction logs and user actions for auditing purposes.
+The `log.txt` file records user login date and time.
 
 ## Usage
 
