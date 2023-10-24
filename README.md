@@ -79,7 +79,7 @@ The `log.txt` file records user login date and time.
 ## Usage
 
 1. Clone this repository using:
-    git clone https://github.com/your-username/ATM.git
+    git clone https://github.com/K7413dS433d/ATM_py.git
 
 2. Run the main script:
    python main.py
